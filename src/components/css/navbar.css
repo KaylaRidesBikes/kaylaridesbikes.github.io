@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+.home_button {
+  height: 4.2rem;
+  padding: 0.5rem 0rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.home_button:hover {
+  filter: drop-shadow(0 0 0.5rem #72eaff);
+}
+
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  max-width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 100%; 
+  max-height: 6.3rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  gap: 0rem 1.5rem;
+}
+
+.navbar-link {
+  color: #000000; 
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #72eaff; 
+}
+
+

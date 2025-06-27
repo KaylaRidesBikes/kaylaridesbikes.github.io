@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+.intro-page {
+  height: calc(100vh - 100.8px); /* Adjust to your navbar height */
+  background-repeat: repeat;
+  background-size: 600px 600px;
+  background-position: 0 0;
+  animation: bg-scrolling-reverse 20s infinite linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.bg-animate {
+  animation: bg-scrolling-reverse 20s infinite linear;
+}
+
+.bg-paused {
+  animation-play-state: paused !important;
+}
+
+.fullpage-section {
+  height: calc(100vh - 100.8px);
+  width: 100%;
+}
+
+.intro-container {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-box {
+  width: 50%;
+}
+
+.profile-picture {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-picture img {
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.text-box h1 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.text-box p {
+    font-size: 24px;
+}
+
+.fade-in-left {
+  opacity: 0;
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.8s;
+}
+.fade-delay-2 {
+  animation-delay: 2s;
+}
+
+@media (min-width: 1024px) {
+  .profile-picture img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .profile-picture img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+/* Animation */
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: -300px 300px;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
