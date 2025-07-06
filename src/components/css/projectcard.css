@@ -4,6 +4,8 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   max-width: 300px;
+  max-height: fit-content;
+  min-height: 412px; /* aligns all cards to size as largest */
   width: 300px;
   transition: transform 0.2s ease;
 
@@ -11,6 +13,7 @@
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
+  
   
 }
 
@@ -33,18 +36,18 @@
 }
 
 .project-content h3 {
-  font-size: 1.25rem;
+  font-size: 24px;
   margin-bottom: 0.5rem;
 }
 
 .project-content p {
-  font-size: 1rem;
+  font-size: 20px;
   color: #555;
   flex-grow: 1;
 }
 
 .project-date {
-  font-size: 0.875rem;
+  font-size: 20px;
   color: #888;
   margin-top: 1rem;
 }
