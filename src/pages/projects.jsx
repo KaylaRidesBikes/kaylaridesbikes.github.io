@@ -5,6 +5,8 @@ import project2Img from '../assets/esp32_ap.webp';
 import project3Img from '../assets/raspberrypi_car.webp';
 import project4Img from '../assets/hospitaldb.webp';
 import project5img from '../assets/bunny_window.gif';
+import left_arrow from '../assets/left_arrow.png';
+import right_arrow from '../assets/right_arrow.png';
 
 import { useEffect, useRef } from 'react';
 
@@ -60,7 +62,9 @@ function ProjectPage() {
     <div className="projects-section" id="projects">
       <h2 className="projects-title">My Projects</h2>
       <div className="scroll-wrapper">
-        <button className="scroll-btn left" onClick={() => scroll('left')}>&#8592;</button>
+        <button className="scroll-btn left" onClick={() => scroll('left')}>
+          <img src={left_arrow} alt="Scroll left" className="scroll-icon" />
+        </button>
         <div className="projects-container" ref={scrollRef}>
           {projects.map((project, index) => (
             <ProjectCard
@@ -73,7 +77,9 @@ function ProjectPage() {
             />
           ))}
         </div>
-        <button className="scroll-btn right" onClick={() => scroll('right')}>&#8594;</button>
+        <button className="scroll-btn right" onClick={() => scroll('right')}>
+          <img src={right_arrow} alt="Scroll right" className="scroll-icon" />
+        </button>
       </div>
     </div>
   );
