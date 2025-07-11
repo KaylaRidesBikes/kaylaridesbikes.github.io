@@ -16,7 +16,7 @@ const projects = [
     title: 'ESP32 AP Lighting Control',
     description: 'Using ESP32 as a WiFi access point for remote control of LEDs.',
     date: 'June 2025',
-    link: ''
+    link: 'https://github.com/KaylaRidesBikes/esp32AP'
   },
   {
     image: project1Img,
